@@ -1,12 +1,21 @@
-
+import React, { useState }  from "react";
 import './App.css';
-import Banner from './components/Banner';
-import SearchBar from './components/SearchBar';
+import Images from './components/Images';
+
+import useImages from './data/useImages.js'
+import Navbar from './components/Navbar';
+
 function App() {
+  const [search,setSearch] = useState('nature')
+  const images = useImages(search);
+  
+ 
   return (
-    <>
-      <Banner props={SearchBar}></Banner>
-    </>
+    <div>
+      <Navbar setSearch={setSearch} />
+      
+      <Images data ={images}/>
+    </div>
   );
 }
 
