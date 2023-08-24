@@ -26,7 +26,7 @@
     height: 500px;
     width: 100%;
     max-width: 1270px;
-    margin:2% 1%;
+    margin:2% auto;
   }
   
   .carousel_wrapper {

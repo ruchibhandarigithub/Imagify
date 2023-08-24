@@ -6,7 +6,7 @@ const Navbar = ({ setSearch }) =>{
         setSearch(searchTerm);
     }
     return (
-        <div className="bg-gray-900 text-4xl gap-10 text-white flex jflex-col  md:flex-row lg:justify-center  px-5 py-5">
+        <div className="bg-gray-900 text-4xl gap-10 text-white flex flex-col  md:flex-row  px-5 py-5">
           <div className='flex justify-center items-center  border-dotted'>
           <h1 className="font-size-22">Imagify </h1> 
           <FaCamera />

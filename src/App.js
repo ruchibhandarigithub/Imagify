@@ -8,7 +8,7 @@ import Carousel from "./components/Carousel";
 import Footer from './components/Footer';
 
 function App() {
-  const [search,setSearch] = useState('nature')
+  const [search,setSearch] = useState('cat');
   const images = useImages(search);
   
  
